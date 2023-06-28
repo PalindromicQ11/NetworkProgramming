@@ -13,9 +13,10 @@ Def set_wifi(Data, cleaned_data)--> list[int,str]:
     info = []    
 for line in data:
     for "user profiles:" in line:
-    lines = line.split(':')[1]
+    info = line.split(':')[1]
     
 for lines in def set_wifi():
+    if " profiles " in info: 
     for "all content" in lines:
     info = lines.split(':')[1]
     print(' Extracted info: %d %str % info ')
