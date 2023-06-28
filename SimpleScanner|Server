@@ -12,10 +12,15 @@ Class __Server__(self)--> int,str, vector, bin:
     client = client.connect()
 
     Def Set_Client_receive(message):
-        
-        message = 
-        Receive = client.recv().decode('utf-8')
-        
+         Message = client.recv().decode('utf-8')
+         if len(message) is none:
+            sys exit():
+         while 1: 
+            for {bytes in message} as read:
+            set[bin] = read.writeline(bytes)
+            Except KeyboardError as er:
+            print(f" there's been an error: {sys exit(1)}")
+
     
     Def Set_Client_Send():
-        message_send = client.sendall().encode('utf-8')
+        message_send = client.sendall(message).encode('utf-8')
